@@ -8,51 +8,64 @@ class GeneralController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        return view('pages.home.index');
     }
 
     public function contatti_index()
     {
-        return view('pages.contatti');
+        return view('pages.contact.index');
     }
 
-    public function arsenale_index()
-    {
-        return view('pages.arsenale');
-    }
+    // cafe
 
     public function cafe_index()
     {
-        return view('pages.cafe');
+        return view('pages.cafe.index');
     }
 
-    public function sea_food_index()
+    public function bar_index()
     {
-        return view('pages.sea_food');
-    }
-
-    public function meat_dishes_index()
-    {
-        return view('pages.meat_dishes');
-    }
-
-    public function pizzeria_index()
-    {
-        return view('pages.pizzeria');
-    }
-
-    public function street_food_index()
-    {
-        return view('pages.street_food');
-    }
-
-    public function eventi_lounge_index()
-    {
-        return view('pages.eventi_lounge');
+        return view('pages.cafe.bar');
     }
 
     public function gelateria_index()
     {
-        return view('pages.gelateria');
+        return view('pages.cafe.gelateria');
     }
+
+    // food
+
+    public function food_index()
+    {
+        return view('pages.food.index');
+    }
+
+    public function sea_food_index()
+    {
+        return view('pages.food.sea_food');
+    }
+
+    public function meat_dishes_index()
+    {
+        return view('pages.food.meat_dishes');
+    }
+
+    public function pizzeria_index()
+    {
+        return view('pages.food.pizzeria');
+    }
+
+    public function street_food_index()
+    {
+        return view('pages.food.street_food');
+    }
+
+    // lounge
+
+    public function arsenale_index()
+    {
+        return view('pages.lounge.arsenale');
+    }
+
+
 }

@@ -13,10 +13,13 @@ window.onload = () => {
 
     stickyNavigation();
 
-    if (window.location.href !== window.location.origin + '/' && window.location.href !== window.location.origin + '/lounge/arsenale')
+    if (
+        window.location.href !== window.location.origin + '/' &&
+        window.location.href !== window.location.origin + '/lounge/arsenale' &&
+        window.location.href !== window.location.origin + '/cafe' &&
+        window.location.href !== window.location.origin + '/food'
+    )
         heroSlider('slider');
-
-    console.log(window.location.href !== window.location.origin + '/' && window.location.href !== window.location.origin + '/lounge/arsenale');
 
     if (window.location.href === window.location.origin + '/')
     {
@@ -38,7 +41,10 @@ window.onload = () => {
         });
     }
 
-    if (window.location.pathname === '/lounge/arsenale')
+    if (window.location.pathname === '/lounge/arsenale' ||
+        window.location.pathname === '/cafe' ||
+        window.location.pathname === '/food'
+    )
     {
         let galleryImages = document.querySelectorAll('.gallery .image');
 

@@ -76,7 +76,7 @@
                         <span>
                             <img src="{{ URL::asset('images/ico_cafe.svg') }}">
                         </span>
-                        <a href="#">CAFE</a>
+                        <a href="/cafe">CAFE</a>
                     </div>
 
                     <div>
@@ -91,7 +91,7 @@
                         <span>
                             <img src="{{ URL::asset('images/ico_food.svg') }}">
                         </span>
-                        <a href="#">FOOD</a>
+                        <a href="/food">FOOD</a>
                     </div>
 
                     <div>

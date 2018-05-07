@@ -1,0 +1,96 @@
+.subheader {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheader.cafe {
+    background: url(../images/img-cafe.jpg) 50% 50%;
+    background-size: cover;
+}
+
+.subheader.food {
+    background: url(../images/img-food.jpg) 50% 50%;
+    background-size: cover;
+}
+
+.content-wrapper h2.normal.big-header {
+    font-size: 70px;
+    text-align: center;
+}
+
+.pages.cafe {
+    background: #faf9fe;
+}
+
+.pages.food {
+    background: #fffcf7;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+    margin: 20px -10vw;
+}
+
+.pages > div {
+    margin: 0 20px;
+    min-width: Calc(15% - 40px);
+    max-width: Calc(15% - 10px);
+    min-height: 130px;
+}
+
+.pages > div img {
+    max-width: 90px;
+    width: 100%;
+}
+
+.pages > div p {
+    text-align: center;
+    margin: 20px 0 0;
+    font-weight: bold;
+}
+
+.pages > div a {
+    text-decoration: none;
+    color: #013d6a;
+}
+
+@media (max-width: 1024px) {
+    .subheader {
+        height: 80px;
+    }
+
+    .content-wrapper h2.normal.big-header {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1091px) {
+    .pages {
+        margin: 20px -5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .pages {
+        margin: 20px -20px;
+    }
+
+    .pages > div img {
+        max-width: 60px;
+    }
+
+    .pages > div {
+        min-width: Calc(50% - 40px);
+        max-width: Calc(50% - 10px);
+    }
+}
