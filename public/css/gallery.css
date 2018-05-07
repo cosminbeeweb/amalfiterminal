@@ -1,0 +1,110 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    max-height: 820px;
+}
+
+.gallery .thumbnail {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: Calc(50% - 150px);
+    top: Calc(50% - 100px);
+    background: rgba(0, 61, 106, .8);
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .image {
+    min-width: Calc(50% - 10px);
+    max-width: Calc(50% - 10px);
+    height: 100%;
+    max-height: 400px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.gallery .image.one {
+    background: url(../images/gallery/1.png) 50% 50%;
+    background-size: cover;
+}
+
+.gallery .image.two {
+    background: url(../images/gallery/2.png) 50% 50%;
+    background-size: cover;
+}
+
+.gallery .image.three {
+    background: url(../images/gallery/3.png) 50% 50%;
+    background-size: cover;
+}
+
+.gallery .image.four {
+    background: url(../images/gallery/4.png) 50% 50%;
+    background-size: cover;
+}
+
+.fullscreen-gallery {
+    position: fixed;
+    width: Calc(100% - 40px);
+    height: Calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0,0,0,.8);
+    -webkit-transition: visibility 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    -moz-transition: visibility 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    -o-transition: visibility 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    transition: visibility 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.fullscreen-gallery.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fullscreen-gallery .full {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fullscreen-gallery .close {
+    position: absolute;
+    max-width: 45px;
+    top: 0;
+    padding: 15px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.81);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .gallery .image {
+        max-height: 220px;
+    }
+
+    .gallery .thumbnail {
+        width: 200px;
+        height: 100px;
+        left: Calc(50% - 100px);
+        top: Calc(50% - 50px);
+        font-size: 24px;
+    }
+}

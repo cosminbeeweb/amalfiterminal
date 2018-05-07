@@ -1,0 +1,202 @@
+.subheader {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheader.cafe {
+    background: url(../images/struttura-252.png) 50% 30%;
+    background-size: cover;
+}
+
+.subheader.sea-food {
+    background: url(../images/sea-food.jpg) 50% 1%;
+    background-size: cover;
+}
+
+.subheader.meat-dishes {
+    background: url(../images/meat-dishes.jpg) 50% 30%;
+    background-size: cover;
+}
+
+.subheader.pizzeria {
+    background: url(../images/pizzeria.jpg) 50% 30%;
+    background-size: cover;
+}
+
+.subheader.street-food {
+    background: url(../images/street-food.jpg) 50% 30%;
+    background-size: cover;
+}
+
+.subheader.eventi-lounge {
+    background: url(../images/wine-drink.jpg) 50% 30%;
+    background-size: cover;
+}
+
+.subheader.gelateria {
+    background: url(../images/gelateria.jpg) 50% 45%;
+    background-size: cover;
+}
+
+.subheader img {
+    max-width: 165px;
+}
+
+.subheader p {
+    font-size: 60px;
+    color: #013d6a;
+    font-weight: 800;
+    margin: 0 40px;
+}
+
+.cafe-header,
+.menu-header {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #013d6a;
+    font-weight: 800;
+}
+
+.cafe-description {
+    margin: 20px 0;
+    color: #565656;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.cafe-menu .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -20px;
+}
+
+.cafe-menu .menu .item {
+    min-width: Calc(50% - 80px);
+    max-width: Calc(50% - 80px);
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 2px dashed #bcafaf;
+}
+
+.cafe-menu .menu .item .item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cafe-menu .menu .item .item-content img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.cafe-menu .menu .item .item-content .title {
+    margin: 0 30px;
+}
+
+.cafe-menu .menu .item .item-content .tag {
+    margin-left: auto;
+    background: #FFD810;
+    font-weight: 800;
+    margin-top: -20px;
+}
+
+.cafe-menu .menu .item .item-content .tag p {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+    height: 12px;
+}
+
+.title .title-text {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+}
+
+.title .description {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.cafe-menu button {
+    margin: 20px auto;
+    display: flex;
+    padding: 12px 28px;
+    background: transparent;
+    border: 1px solid #1797CD;
+    border-radius: 50px;
+    color: #1797CD;
+    font-family: Nunito;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.cafe-menu button:hover {
+    background: #1797CD;
+    color: #fff;
+}
+
+.cafe-menu button:focus {
+    outline: none;
+    background: #1797CD;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .subheader {
+        height: 80px;
+    }
+
+    .subheader img {
+        max-width: 45px;
+    }
+
+    .subheader p {
+        font-size: 40px;
+        color: #013d6a;
+        font-weight: 800;
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .cafe-menu .menu .item {
+        min-width: Calc(100% - 50px);
+        max-width: Calc(100% - 50px);
+        padding: 20px 10px;
+    }
+
+    .cafe-menu .menu .item .item-content img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .cafe-menu .menu .item .item-content .title {
+        margin: 0 12px;
+    }
+
+    .title .title-text {
+        font-size: 18px;
+    }
+
+    .title .description {
+        font-size: 15px;
+    }
+
+    .cafe-menu button {
+        display: unset;
+    }
+}

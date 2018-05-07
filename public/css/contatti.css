@@ -1,0 +1,223 @@
+.contatti-description {
+    text-align: justify;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.contatti-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 50px;
+    font-size: 18px;
+}
+
+.contatti-details > div {
+    text-align: center;
+    min-height: 150px;
+    position: relative;
+}
+
+.contatti-details > div p {
+    margin: 66px 0;
+    color: #003D6A;
+    font-weight: bold;
+}
+
+.contatti-details > div:first-child {
+    background: #FFFCF7;
+}
+
+.contatti-details > div:nth-child(2) {
+    background: #FBF9FC;
+}
+
+.contatti-details > div:nth-child(3) {
+    background: #FFF5E9;
+}
+
+.contatti-details div .thumbnail {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #fff;
+    margin: -30px auto;
+}
+
+.contatti-details div .thumbnail i {
+    font-size: 30px;
+}
+
+.contatti-details .telephone .thumbnail {
+    background: #A783BA;
+}
+
+.contatti-details .address .thumbnail {
+    background: #27A536;
+}
+
+.contatti-details .email .thumbnail {
+    background: #003D6A;
+}
+
+.contatti-form > h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #013d6a;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contatti-form > p {
+    text-align: center;
+    margin: 20px 0 40px;
+    font-weight: 600;
+}
+
+.contatti-form form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatti-form form input {
+    min-width: Calc(50% - 85px);
+    max-width: Calc(50% - 85px);
+    padding: 25px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    border: 1pt solid #C6C6C6;
+    font-size: 18px;
+    font-family: Nunito;
+    font-weight: 800;
+    color: #000;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.contatti-form form button {
+    background: transparent;
+    border: 1px solid #1797CD;
+    border-radius: 50px;
+    color: #1797CD;
+    font-weight: 600;
+    font-family: Nunito;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 18px 100px;
+    margin: 10px auto;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.contatti-form form button:hover,
+.contatti-form form button:focus {
+    outline: none;
+    background: #1797CD;
+    color: #fff;
+}
+
+.contatti-form form input:hover,
+textarea:hover {
+    border: 1pt solid #000;
+}
+
+.contatti-form form input:focus,
+textarea:focus {
+    outline: none;
+    border: 1pt solid #000;
+}
+
+textarea {
+    min-width: calc(100% - 85px);
+    width: 100%;
+    min-height: 170px;
+    padding: 25px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    border: 1pt solid #C6C6C6;
+    font-size: 18px;
+    font-family: Nunito;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.3s;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000;
+    font-size: 16px;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+    font-size: 16px;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder { /* IE 10+ */
+    color: #000;
+    font-size: 16px;
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+    font-size: 16px;
+}
+
+@media (min-width: 1300px) {
+    .contatti-details > div {
+        margin: 0 20px;
+        min-width: Calc(33.3333% - 40px);
+        max-width: Calc(33.3333% - 40px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .contatti-details > div {
+        margin: 20px 10px;
+        min-width: Calc(50% - 20px);
+        max-width: Calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .contatti-details > div {
+        margin: 20px 10px;
+        min-width: Calc(100% - 20px);
+        max-width: Calc(100% - 20px);
+    }
+}
+
+@media (max-width: 900px) {
+    .contatti-form form input {
+        font-size: 15px;
+        padding: 15px 20px;
+        min-width: Calc(100% - 50px);
+        max-width: Calc(100% - 50px);
+    }
+
+    textarea {
+        min-width: Calc(100% - 50px);
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+}

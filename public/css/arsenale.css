@@ -1,0 +1,92 @@
+.header-image {
+    background: url(../images/struttura-29.png) 50% 99%;
+    background-size: cover;
+    width: 100%;
+    height: Calc(100vh - 120px);
+}
+
+.contatti-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 50px;
+    font-size: 18px;
+}
+
+.contatti-details > div {
+    text-align: center;
+    min-height: 150px;
+    position: relative;
+}
+
+.contatti-details > div p {
+    margin: 66px 0;
+    color: #003D6A;
+    font-weight: bold;
+}
+
+.contatti-details > div:first-child {
+    background: #FFFCF7;
+}
+
+.contatti-details > div:nth-child(2) {
+    background: #FBF9FC;
+}
+
+.contatti-details > div:nth-child(3) {
+    background: #FFF5E9;
+}
+
+.contatti-details div .thumbnail {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #fff;
+    margin: -30px auto;
+}
+
+.contatti-details div .thumbnail i {
+    font-size: 30px;
+}
+
+.contatti-details .telephone .thumbnail {
+    background: #A783BA;
+}
+
+.contatti-details .address .thumbnail {
+    background: #27A536;
+}
+
+.contatti-details .email .thumbnail {
+    background: #003D6A;
+}
+
+@media (min-width: 1300px) {
+    .contatti-details > div {
+        margin: 0 20px;
+        min-width: Calc(33.3333% - 40px);
+        max-width: Calc(33.3333% - 40px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .contatti-details > div {
+        margin: 20px 10px;
+        min-width: Calc(50% - 20px);
+        max-width: Calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .contatti-details > div {
+        margin: 20px 10px;
+        min-width: Calc(100% - 20px);
+        max-width: Calc(100% - 20px);
+    }
+}

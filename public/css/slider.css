@@ -1,0 +1,904 @@
+@font-face {
+    src: url("../fonts/FontAwesome.otf");
+    font-family: FontAwesome;
+}
+
+.slider-container {
+    z-index: 9;
+    overflow: hidden;
+    top: 0;
+    position: relative;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.fa-angle-left:before {
+    content: "\f104";
+    height: 34px;
+    width: 20px;
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+    height: 34px;
+    width: 15px;
+}
+
+.slider {
+    width: 500%;
+    height: 60vh;
+    margin-left: 0;
+    transition: margin-left .5s ease-in-out;
+    -moz-transition: margin-left .5s ease-in-out;
+    -webkit-transition: margin-left .5s ease-in-out;
+}
+
+.slide {
+    height: 100%;
+    width: 20%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider.wide .slide1 {
+    background: url("../images/struttura-29.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slider.wide .slide2 {
+    background: url("../images/struttura-30.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slider.wide .slide3 {
+    background: url("../images/struttura-31.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slider.wide .slide4 {
+    background: url("../images/struttura-32.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slider.wide .slide5 {
+    background: url("../images/struttura-33.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slide1 .content h3,
+.slide1 .content h3 .thin,
+.slide1 .content p {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+.slide2 .content h3,
+.slide2 .content h3 .thin,
+.slide2 .content p {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+.slide3 .content h3,
+.slide3 .content h3 .thin,
+.slide3 .content p {
+    color: #000;
+}
+
+.slide4 .content h3,
+.slide4 .content h3 .thin,
+.slide4 .content p {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+.slide5 .content h3,
+.slide5 .content h3 .thin,
+.slide5 .content p {
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h3 {
+    font-size: 3vmax;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+}
+
+.content h3 .thin {
+    font-weight: 300;
+    color: #fff;
+}
+
+.content p {
+    color: #fff;
+    line-height: 42px;
+    font-size: 1.4vmax;
+    width: 50vw;
+    margin: 15px auto;
+}
+
+.content .learn-more {
+    padding: 19px 20px;
+    font-weight: 300;
+    border: none;
+    background: #ffffff;
+    color: #000;
+    font-size: 15px;
+    margin: 30px auto;
+}
+
+.content .learn-more:active,
+.content .learn-more:focus {
+    outline: none;
+}
+
+.content .learn-more:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.content .learn-more:after {
+    font-family: FontAwesome;
+    content: "\f105";
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+
+.pag {
+    color: #1797CD;
+    margin: 0 15px;
+    font-family: FontAwesome;
+}
+
+.pag:hover {
+    cursor: pointer;
+}
+
+.pagination {
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.pag.active:after {
+    content: "\f111";
+    font-size: 16px;
+}
+
+.pag:after {
+    content: "\f1db";
+    font-size: 16px;
+}
+
+.slider-navigation {
+    position: absolute;
+    height: 30px;
+    left: 0;
+    top: Calc(50% - 30px);
+    right: 0;
+    padding: 0 25px;
+    font-size: 35px;
+}
+
+.slider-navigation i {
+    color: #1897ce;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-navigation i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slider-navigation .left {
+    float: left;
+}
+
+.slider-navigation .right {
+    float: right;
+}
+
+.slider.boxed .slide img {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.slider.boxed .slide > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container.boxed .slider-navigation {
+    position: absolute;
+    height: 30px;
+    left: 0px;
+    top: unset;
+    right: 0;
+    padding: 0 90px;
+    bottom: 50px;
+}
+
+.slider-container.boxed .pagination {
+    bottom: 25px;
+    position: absolute;
+}
+
+.slider.boxed .content {
+    margin-left: 30px;
+    text-align: unset;
+    width: 50%;
+}
+
+.slider.boxed .content p {
+    font-size: 18px;
+    max-width: 90%;
+    text-align: justify;
+    margin: unset;
+    color: #fff;
+}
+
+.slider.boxed .content h3 {
+    font-size: 2vmax;
+    font-family: aurulent-bold;
+    color: #fff;
+}
+
+.slider.boxed .slide iframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.slider.boxed .slide {
+    height: Calc(100% - 110px);
+}
+
+.slider.boxed .content button {
+    width: max-content;
+    width: -moz-max-content;
+    background: #009ee3;
+    border: none;
+    font-family: aurulent;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* END SLIDER */
+
+.presentation-section h3 {
+    font-weight: bold;
+    color: #635e5e;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-section p {
+    font-weight: 600;
+    color: #635e5e;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-section .bike-models {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #f5f6f7;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: 30px;
+}
+
+.presentation-section .bike-models div {
+    display: flex;
+    flex: 1 0 200px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.presentation-section .bike-models div > h5 {
+    color: #635e5e;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.section {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.section > h3 {
+    font-weight: bold;
+}
+
+.section > hr {
+    border-top: 2px solid #a2a1a1;
+    margin-top: 5px;
+}
+
+.versioni-section .box {
+    background: #FFF url(../images/versioni.png) no-repeat 0% 5%;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 415px;
+    margin: 40px 0;
+}
+
+.versioni-section .box .heading {
+    font-size: 45px;
+    font-family: aurulent-bold;
+    color: #fff;
+    margin: 0 30px;
+    padding-top: 20px;
+}
+
+.versioni-section .box .heading .underline {
+    display: block;
+    height: 3px;
+    border-top: 3px solid #fff;
+    width: 60px;
+    margin-left: 3px;
+}
+
+.versioni-section .box .information {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    margin: 10px 30px;
+    font-family: aurulent;
+}
+
+.versioni-section .box .information ul {
+    font-size: 20px;
+}
+
+.versioni-section .box .information .left,
+.versioni-section .box .information .right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.versioni-section .box .information .right .info-box {
+    position: absolute;
+    top: -35px;
+    max-width: 312px;
+    width: 100%;
+    background: #fff;
+    margin-left: 30px;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+.versioni-section .box .information .right .info-box p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.versioni-section .box .information .right .info-box p:nth-child(2) {
+    color: #009fe3;
+}
+
+.versioni-section .box .information .right button {
+    margin: 70px 134px;
+    background: #009fe3;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 2px;
+    font-size: 19px;
+}
+
+.mondo-section .mondo-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -14px;
+    margin-right: -14px;
+}
+
+
+.mondo-section .mondo-boxes div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    min-width: Calc(33.333% - 5px);
+    max-width: Calc(33.333% - 5px);
+    margin: 20px auto 60px;
+    position: relative;
+
+}
+
+.mondo-section .mondo-boxes div img {
+    width: 96%;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -ms-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.mondo-section .mondo-boxes div img:hover {
+    transform: scale(1.025);
+}
+
+.mondo-section .mondo-boxes div > h3 {
+    margin-left: 13px;
+    margin-right: auto;
+    color: #635e5e;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.mondo-section .mondo-boxes div > h2 {
+    margin-left: 13px;
+    font-weight: 700;
+    color: #635e5e;
+    margin-right: auto;
+    font-size: 21pt;
+    font-family: aurulent-bold;
+}
+
+.mondo-section .mondo-boxes div > p {
+    text-align: justify;
+    font-family: aurulent;
+    color: #635e5e;
+    margin: 18px 14px;
+    font-size: 18px;
+}
+
+.mondo-section .mondo-boxes div > h3 + .underline {
+    display: block;
+    height: 3px;
+    border-top: 3px solid #635e5e;
+    width: 60px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: auto;
+}
+
+.mondo-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.mondo-btns button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 2px;
+    width: max-content;
+    height: 40px;
+    background-color: #555555;
+}
+
+.mondo-btns button:nth-child(2) {
+    margin: 10px 0 0 auto;
+}
+
+.mondo-btns button:nth-child(3) {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.mondo-btns button:nth-child(4) {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.mondo-btns button:focus {
+    outline: none;
+}
+
+.mondo-section .mondo-boxes div > button {
+    margin-right: auto;
+    margin-left: 14px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #009ee3;
+    border-radius: 2px;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 15px;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+.mondo-section .mondo-boxes div > button.filled {
+    background: #009ee3;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.section.unicita {
+    background: #000;
+    color: #fff;
+    margin: 30px 60px;
+    padding: 45px 48px;
+}
+
+.section.unicita .slider-container {
+    position: relative;
+}
+
+.section.unicita .slider {
+    height: 55vh;
+}
+
+@media (max-width: 480px) {
+    .versioni-section .box .information .right button {
+        margin: -15px 0 !important;
+    }
+}
+
+@media (min-width: 1192px) and (max-width: 1600px) {
+    .versioni-section .box {
+        background: #FFF url(../images/versioni.png) no-repeat 75% 0%;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mondo-section .mondo-boxes div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1191px) {
+    .section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .versioni-section .box {
+        background: #FFF url(../images/versioni.png) no-repeat 60% 0%;
+        background-size: cover;
+        min-height: 500px;
+    }
+
+    .versioni-section .box .information {
+        display: block;
+    }
+
+    .versioni-section .box .information .right {
+        margin-top: 40px;
+    }
+
+    .versioni-section .box .information .right .info-box {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .versioni-section .box .information .right button {
+        margin: -15px 30px;
+    }
+
+    .versioni-section .box .heading {
+        font-size: 34px;
+    }
+
+    .versioni-section .box .information ul {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 410px) {
+    .presentation-section .bike-models div {
+        min-width: Calc(50% - 10px);
+        max-width: Calc(50% - 10px);
+    }
+}
+
+@media (min-width: 620px) {
+    .presentation-section .bike-models div {
+        min-width: Calc(33.33333% - 10px);
+        max-width: Calc(33.33333% - 10px);
+    }
+}
+
+@media (min-width: 830px) {
+    .presentation-section .bike-models div {
+        min-width: Calc(25% - 10px);
+        max-width: Calc(25% - 10px);
+    }
+}
+
+@media (min-width: 1040px) {
+    .presentation-section .bike-models div {
+        min-width: Calc(20% - 10px);
+        max-width: Calc(20% - 10px);
+    }
+}
+
+@media (min-width: 1250px) {
+    .presentation-section .bike-models div {
+        min-width: Calc(16.66667% - 10px);
+        max-width: Calc(16.66667% - 10px);
+    }
+}
+
+@media (min-width: 1460px) {
+    .presentation-section .bike-models div {
+        min-width: Calc(14.28571% - 10px);
+        max-width: Calc(14.28571% - 10px);
+    }
+}
+
+@media (min-width: 1670px) {
+    .presentation-section .bike-models div {
+        min-width: Calc(10% - 10px);
+        max-width: Calc(10% - 10px);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .content p {
+        font-size: 2.4vmax;
+        width: 68vw;
+    }
+
+    .content h3 {
+        font-size: 4vmax;
+    }
+
+    .mondo-section .mondo-boxes div {
+        min-width: Calc(90% - 5px);
+        max-width: Calc(100% - 5px);
+    }
+
+    .mondo-btns {
+        display: block;
+    }
+
+    .mondo-btns button {
+        margin: 6px auto !important;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1235px) {
+    .mondo-section .mondo-boxes div {
+        min-width: Calc(50% - 5px);
+        max-width: Calc(50% - 5px);
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .slider-navigation {
+        padding: 0 35px;
+    }
+
+    .pagination {
+        bottom: 30px;
+    }
+
+    .section.unicita .slider {
+        height: auto;
+        min-height: 55vh;
+    }
+
+    .slider.boxed .slide > div {
+        display: block;
+    }
+
+    .slider.boxed .content {
+        margin-left: 0;
+        text-align: unset;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .slider.boxed .content p {
+        font-size: 18px;
+        max-width: 100%;
+        text-align: justify;
+        margin: unset;
+        color: #fff;
+        width: 100%;
+    }
+
+    .slider.boxed .slide iframe {
+        width: 80%;
+        margin: 0 auto;
+        max-height: 300px;
+    }
+
+    .slider.boxed .slide img {
+        max-width: 80%;
+        margin: 0 auto;
+        max-height: 300px;
+    }
+
+    .slider-container.boxed .slider-navigation {
+        bottom: 25px;
+    }
+
+    .slider-container.boxed .pagination {
+        bottom: 0;
+    }
+
+    .slider.boxed .slide {
+        margin-bottom: 50px;
+    }
+
+    .section.unicita {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slider.boxed .slide img {
+        max-width: 100%;
+    }
+
+    .slider.boxed .content p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .slider-container.boxed .pagination {
+        display: none;
+    }
+
+    .slider-container.boxed .slider-navigation {
+        bottom: 25px;
+        left: -50px;
+        right: -50px;
+    }
+
+    .slider.boxed .slide iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-content {
+        padding: 40px 15px 0;
+    }
+
+    .bike-models {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+
+    .slider-container {
+        width: 100%;
+        left: unset;
+    }
+
+    .slider-navigation {
+        position: relative;
+        height: 50px;
+        padding: 0px 2px;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: -70px;
+    }
+
+    .fa-angle-left:before {
+        content: "\f104";
+        height: 27px;
+        width: 16px;
+    }
+
+    .fa-angle-right:before {
+        content: "\f105";
+        height: 27px;
+        width: 10px;
+    }
+
+    .slider-navigation i {
+        width: 35px;
+        height: 35px;
+        color: #ffffff;
+        background: #1897ce;
+    }
+
+    .pag {
+        margin: 0 10px;
+    }
+
+    .pagination {
+        margin: 55px auto 0;
+        z-index: 999;
+        position: relative;
+        left: unset !important;
+        width: 220px;
+    }
+
+    .slider {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 1145px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display:block !important;
+    }
+}
