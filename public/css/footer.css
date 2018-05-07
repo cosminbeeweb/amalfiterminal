@@ -44,3 +44,73 @@ footer a {
     color: unset;
     text-decoration: none;
 }
+
+.map {
+    position: relative;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 7%;
+    background: #fff;
+    height: 550px;
+    width: 350px;
+    box-shadow: 0px 0px 4px -1px #013d6a;
+    padding: 100px 50px 0;
+}
+
+.map-overlay h2 {
+    color: #013d6a;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.map-overlay p {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #575757;
+}
+
+.map-overlay button {
+    background: transparent;
+    border: 1px solid #38a5d5;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #38a5d5;
+    border-radius: 30px;
+    margin-top: 40px;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.map-overlay button:hover {
+    background: #38a5d5;
+    color: #fff;
+}
+
+.map-overlay button:focus,
+.map-overlay button:active {
+    background: #38a5d5;
+    color: #fff;
+    outline: none;
+}
+
+.map-overlay img {
+    max-width: 140px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 1024px) {
+    .map-overlay {
+        display: none;
+    }
+}

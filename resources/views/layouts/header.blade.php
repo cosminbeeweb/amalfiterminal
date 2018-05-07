@@ -13,17 +13,24 @@
 
         <div class="header-icons">
             <div class="icon">
-                <a href="/food/sea-food">
-                    <img src="{{ URL::asset('images/sea.svg')}}" alt="Icon Sea Food"/>
+                <a href="#">
+                    <img src="{{ URL::asset('images/menu_baby.svg')}}" alt="Icon Menu Baby"/>
                 </a>
-                <p>Sea food</p>
+                <p>Menu Baby</p>
             </div>
 
             <div class="icon">
-                <a href="/food/meat-dishes">
+                <a href="/food/sea-food">
+                    <img src="{{ URL::asset('images/sea.svg')}}" alt="Icon Sea Food"/>
+                </a>
+                <p>Sea Food</p>
+            </div>
+
+            <div class="icon">
+                <a href="/food/steak-food">
                     <img src="{{ URL::asset('images/meat.svg')}}" alt="Icon Meat Dishes"/>
                 </a>
-                <p>Meat dishes</p>
+                <p>Steak Food</p>
             </div>
 
             <div class="icon">
@@ -37,7 +44,7 @@
                 <a href="/food/street-food">
                     <img src="{{ URL::asset('images/ico_food.svg')}}" alt="Icon Street Food"/>
                 </a>
-                <p>Street food</p>
+                <p>Street Food</p>
             </div>
 
             <div class="icon">
@@ -58,7 +65,7 @@
                 <a href="/cafe/bar">
                     <img src="{{ URL::asset('images/ico_cafe.svg')}}" alt="Icon Cafe"/>
                 </a>
-                <p>Coffee bar</p>
+                <p>Coffee Bar</p>
             </div>
         </div>
     </nav>
@@ -95,7 +102,7 @@
                     </div>
 
                     <div>
-                        <a href="/food/meat-dishes">MEAT DISHES</a>
+                        <a href="/food/meat-dishes">STEAK FOOD</a>
                     </div>
 
                     <div>

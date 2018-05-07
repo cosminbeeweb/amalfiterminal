@@ -20,7 +20,7 @@ Route::get('/cafe/gelateria', 'GeneralController@gelateria_index');
 
 Route::get('/food', 'GeneralController@food_index');
 Route::get('/food/sea-food', 'GeneralController@sea_food_index');
-Route::get('/food/meat-dishes', 'GeneralController@meat_dishes_index');
+Route::get('/food/steak-food', 'GeneralController@meat_dishes_index');
 Route::get('/food/pizzeria', 'GeneralController@pizzeria_index');
 Route::get('/food/street-food', 'GeneralController@street_food_index');
 
