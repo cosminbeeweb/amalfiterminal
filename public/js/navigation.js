@@ -24,19 +24,18 @@ window.onload = () => {
     if (window.location.href === window.location.origin + '/')
     {
         let gridTopics = document.querySelectorAll('.hero-grid-topic');
-        console.log(gridTopics);
 
         gridTopics.forEach(topic => {
             topic.addEventListener('mouseover', () => {
-                console.log(1);
                 topic.querySelector('.text-overlay').classList.add('visible');
+                topic.querySelector('.image-overlay').classList.add('visible');
             });
         });
 
         gridTopics.forEach(topic => {
             topic.addEventListener('mouseleave', () => {
-                console.log(2);
                 topic.querySelector('.text-overlay').classList.remove('visible');
+                topic.querySelector('.image-overlay').classList.remove('visible');
             });
         });
     }

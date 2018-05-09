@@ -13,10 +13,17 @@
 
         <div class="header-icons">
             <div class="icon">
-                <a href="#">
-                    <img src="{{ URL::asset('images/menu_baby.svg')}}" alt="Icon Menu Baby"/>
+                <a href="/cafe/bar">
+                    <img src="{{ URL::asset('images/ico_cafe.svg')}}" alt="Icon Cafe"/>
                 </a>
-                <p>Menu Baby</p>
+                <p>Coffee Bar</p>
+            </div>
+
+            <div class="icon">
+                <a href="/cafe/gelateria">
+                    <img src="{{ URL::asset('images/gelateria.svg')}}" alt="Icon Gelateria"/>
+                </a>
+                <p>Gelateria</p>
             </div>
 
             <div class="icon">
@@ -48,25 +55,19 @@
             </div>
 
             <div class="icon">
+                <a href="#">
+                    <img src="{{ URL::asset('images/menu_baby.svg')}}" alt="Icon Menu Baby"/>
+                </a>
+                <p>Menu Baby</p>
+            </div>
+
+            <div class="icon">
                 <a href="/lounge/arsenale">
                     <img src="{{ URL::asset('images/ico_lounge.svg')}}" alt="Icon Eventi And Lounge"/>
                 </a>
                 <p>Eventi & Lounge</p>
             </div>
 
-            <div class="icon">
-                <a href="/cafe/gelateria">
-                    <img src="{{ URL::asset('images/gelateria.svg')}}" alt="Icon Gelateria"/>
-                </a>
-                <p>Gelateria</p>
-            </div>
-
-            <div class="icon">
-                <a href="/cafe/bar">
-                    <img src="{{ URL::asset('images/ico_cafe.svg')}}" alt="Icon Cafe"/>
-                </a>
-                <p>Coffee Bar</p>
-            </div>
         </div>
     </nav>
 
@@ -83,7 +84,7 @@
                         <span>
                             <img src="{{ URL::asset('images/ico_cafe.svg') }}">
                         </span>
-                        <a href="/cafe">CAFE</a>
+                        <a href="/cafe">CAFÈ</a>
                     </div>
 
                     <div>
@@ -121,11 +122,7 @@
                         <span>
                             <img src="{{ URL::asset('images/ico_lounge.svg') }}">
                         </span>
-                        <a href="#">LOUNGE</a>
-                    </div>
-
-                    <div>
-                        <a href="/lounge/arsenale">EVENTI & LOUNGE</a>
+                        <a href="/lounge/arsenale">LOUNGE</a>
                     </div>
 
                     <div class="head simple">

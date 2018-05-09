@@ -203,6 +203,10 @@ input:-moz-placeholder { /* Firefox 18- */
         min-width: Calc(100% - 20px);
         max-width: Calc(100% - 20px);
     }
+
+    .contatti-form form button {
+        width: Calc(100% - 8px);
+    }
 }
 
 @media (max-width: 900px) {

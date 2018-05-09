@@ -24,7 +24,7 @@
                     </div>
                     <div class="bottom hero-grid-topic">
                         <p class="text-overlay">Coffee bar</p>
-                        <a href="/cafe/bar">
+                        <a href="/cafe">
                             <div class="image-overlay"></div>
                         </a>
                     </div>
@@ -32,8 +32,8 @@
             </div>
 
             <div class="two hero-grid-topic">
-                <p class="text-overlay">Street food</p>
-                <a href="/food/street-food">
+                <p class="text-overlay">Amalfi Terminal</p>
+                <a href="/contatti">
                     <div class="image-overlay"></div>
                 </a>
             </div>

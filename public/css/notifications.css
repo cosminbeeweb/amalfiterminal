@@ -1,0 +1,32 @@
+.notification {
+    position: fixed;
+    top: 175px;
+    right: 55px;
+    font-weight: bold;
+    font-family: Nunito;
+    color: #fff;
+    z-index: 100;
+    padding: 20px 90px 20px 55px;
+    border-radius: 5px;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    -moz-transition: opacity 0.35s ease-in-out;
+    -o-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+.notification.success {
+    background: rgb(103, 190, 60);
+}
+
+.notification.error {
+    background: rgb(206, 47, 47);
+}
+
+.notification i {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    right: 30px;
+    bottom: 16px;
+}

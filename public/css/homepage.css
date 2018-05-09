@@ -100,8 +100,18 @@
     left: 0;
     right: 0;
     background: #004976;
-    opacity: 0.7;
+    opacity: 0;
+    visibility: hidden;
     z-index: 5;
+    -webkit-transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    -moz-transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    -o-transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.image-overlay.visible {
+    opacity: .7;
+    visibility: visible;
 }
 
 .mouse-icon {

@@ -23,8 +23,8 @@
 
         <div>
             <img src="{{ URL::asset('images/meat.svg') }}"/>
-            <a href="/food/meat-dishes">
-                <p>Meat dishes</p>
+            <a href="/food/steak-food">
+                <p>Steak food</p>
             </a>
         </div>
 

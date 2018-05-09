@@ -1,0 +1,1 @@
+const closeMe = event => event.closest('.notification').remove();
